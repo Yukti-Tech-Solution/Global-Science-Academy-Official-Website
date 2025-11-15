@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, MapPin, Phone, Facebook, Twitter, Instagram, Youtube } from "lucide-react";
+import { MapPin, Phone, Facebook, Twitter, Instagram, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -93,15 +93,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex gap-2 text-muted-foreground text-sm">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>Global Science Academy,Ardhapur,Naded, Maharashtra</span>
+                <span>Behind Bole hospital, Langade Nagar, Ardhapur, 431704</span>
               </li>
               <li className="flex gap-2 text-muted-foreground text-sm">
                 <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>+91 98765 43210</span>
+                <span>Raju Salunke: 9823745311</span>
               </li>
               <li className="flex gap-2 text-muted-foreground text-sm">
-                <Mail className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>info@globalscienceacademy.com</span>
+                <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                <span>Balaji Sawant: 9403745844</span>
               </li>
             </ul>
           </div>

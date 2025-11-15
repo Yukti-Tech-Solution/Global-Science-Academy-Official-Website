@@ -1,26 +1,31 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download, User } from "lucide-react";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-16 overflow-hidden">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-primary-dark opacity-95" />
+    <section className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-[url('/institute/image14.png.jpeg')] bg-cover bg-center">
+      {/* Background Image */}
+      <picture className="absolute inset-0" aria-hidden>
+        <source srcSet="/institute/image14.png.avif" type="image/avif" />
+        <img
+          src="/institute/image14.png.jpeg"
+          alt="Global Science Academy background"
+          className="w-full h-full object-cover object-center scale-105 md:scale-100"
+        />
+      </picture>
+
+      {/* Soft dark overlay for readability */}
+      <div className="absolute inset-0 bg-black/20" />
       
       {/* Animated Shapes */}
       <div className="absolute top-20 right-10 w-72 h-72 bg-accent/20 rounded-full blur-3xl animate-float" />
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-primary-foreground/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }} />
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div className="text-primary-foreground animate-fade-in-up">
+        <div className="grid grid-cols-1 gap-8 items-center justify-items-center text-center">
+          {/* Content */}
+          <div className="text-primary-foreground animate-fade-in-up max-w-3xl">
             <div className="flex items-center gap-3 mb-6">
               <img 
                 src="/logo.jpg" 
@@ -40,7 +45,7 @@ const HeroSection = () => {
               Premier coaching for 11th & 12th Grade Science students. Expert faculty, comprehensive study materials, and proven results.
             </p>
             
-            <div className="flex flex-wrap gap-4 mb-8">
+            <div className="flex flex-wrap gap-4 mb-8 justify-center">
               <div className="bg-primary-foreground/10 backdrop-blur-sm px-6 py-3 rounded-lg">
                 <div className="text-2xl font-bold">500+</div>
                 <div className="text-sm opacity-90">Students</div>
@@ -50,12 +55,12 @@ const HeroSection = () => {
                 <div className="text-sm opacity-90">Success Rate</div>
               </div>
               <div className="bg-primary-foreground/10 backdrop-blur-sm px-6 py-3 rounded-lg">
-                <div className="text-2xl font-bold">15+</div>
+                <div className="text-2xl font-bold">4+</div>
                 <div className="text-sm opacity-90">Expert Faculty</div>
               </div>
             </div>
             
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 justify-center">
               <Link to="/auth?mode=signup">
                 <Button size="lg" variant="secondary" className="gap-2 hover:scale-105 transition-transform">
                   Join Now <ArrowRight className="h-5 w-5" />
@@ -71,32 +76,6 @@ const HeroSection = () => {
                   <User className="h-5 w-5" /> Login
                 </Button>
               </Link>
-            </div>
-          </div>
-          
-          {/* Right Content - Swiper Slider */}
-          <div className="relative animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <div className="w-full rounded-2xl overflow-hidden h-[400px] md:h-[520px]">
-              <Swiper
-                spaceBetween={30}
-                centeredSlides={true}
-                autoplay={{ delay: 5000, disableOnInteraction: false }}
-                pagination={{ clickable: true }}
-                navigation={true}
-                loop={true}
-                modules={[Autoplay, Pagination, Navigation]}
-                className="w-full h-full"
-              >
-                {[
-                  '/institute/image1.png.jpg',
-                  '/institute/image2.png.jpg',
-                  '/institute/image3.png.jpg',
-                ].map((src, index) => (
-                  <SwiperSlide key={index} className="w-full h-full">
-                    <img src={src} alt={`Institute Image ${index + 1}`} className="w-full h-full object-cover" />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
             </div>
           </div>
         </div>

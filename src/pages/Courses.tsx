@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { CheckCircle2, Clock, Users, BookOpen, Calendar, IndianRupee } from "lucide-react";
+import { CheckCircle2, Clock, Users, BookOpen, Calendar } from "lucide-react";
 
 const Courses = () => {
   const courses = [
@@ -35,8 +35,7 @@ const Courses = () => {
       ],
       schedule: "Monday to Saturday, 6:00 AM - 2:00 PM",
       batchSize: "30 students per batch",
-      duration: "2 Years (11th & 12th)",
-      fees: "₹80,000 per year"
+      duration: "2 Years (11th & 12th)"
     },
     {
       id: "pcb",
@@ -66,8 +65,7 @@ const Courses = () => {
       ],
       schedule: "Monday to Saturday, 6:00 AM - 2:00 PM",
       batchSize: "35 students per batch",
-      duration: "2 Years (11th & 12th)",
-      fees: "₹75,000 per year"
+      duration: "2 Years (11th & 12th)"
     },
     {
       id: "pcmb",
@@ -101,8 +99,7 @@ const Courses = () => {
       ],
       schedule: "Monday to Saturday, 5:30 AM - 3:00 PM",
       batchSize: "25 students per batch",
-      duration: "2 Years (11th & 12th)",
-      fees: "₹95,000 per year"
+      duration: "2 Years (11th & 12th)"
     }
   ];
 
@@ -205,14 +202,12 @@ const Courses = () => {
                           </div>
 
                           <div className="flex items-start gap-3">
-                            <IndianRupee className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                            <div>
-                              <p className="font-medium text-sm">Course Fees</p>
-                              <p className="text-muted-foreground text-sm">{course.fees}</p>
-                              <p className="text-xs text-muted-foreground mt-1">
-                                *Installment options available
-                              </p>
-                            </div>
+                      {/* Fees removed as per standardized Fee Structure on homepage */}
+                      <div>
+                        <p className="font-medium text-sm">Course Fees</p>
+                        <p className="text-muted-foreground text-sm">See Fee Structure section on Home</p>
+                        <p className="text-xs text-muted-foreground mt-1">Refer to Programs & Fee Structure</p>
+                      </div>
                           </div>
                         </CardContent>
                       </Card>
@@ -246,30 +241,7 @@ const Courses = () => {
             ))}
           </div>
 
-          {/* Faculty Section */}
-          <Card className="mt-12 animate-fade-in">
-            <CardHeader>
-              <CardTitle className="text-2xl">Expert Faculty Team</CardTitle>
-              <CardDescription>Learn from the best educators in the field</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {["Physics", "Chemistry", "Mathematics", "Biology"].map((subject) => (
-                  <Card key={subject} className="text-center">
-                    <CardContent className="p-6">
-                      <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <BookOpen className="h-8 w-8 text-primary" />
-                      </div>
-                      <h4 className="font-semibold mb-2">{subject}</h4>
-                      <p className="text-sm text-muted-foreground">
-                        IIT/Medical graduates with 10+ years experience
-                      </p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
+          {/* Faculty Section removed as per requirement */}
         </div>
       </main>
 

@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Clock } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -34,7 +34,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <label className="text-sm font-medium mb-2 block">Phone Number</label>
-                  <Input type="tel" placeholder="+91 98765 43210" />
+                  <Input type="tel" placeholder="1234567890" />
                 </div>
                 <div>
                   <label className="text-sm font-medium mb-2 block">Message</label>
@@ -62,8 +62,8 @@ const ContactSection = () => {
                     <h4 className="font-semibold mb-1">Our Location</h4>
                     <p className="text-muted-foreground text-sm">
                       Global Science Academy<br />
-                      123, Education Street<br />
-                      Andheri West, Mumbai - 400058<br />
+                      Behind Bole hospital, Langade Nagar<br />
+                      Ardhapur, 431704<br />
                       Maharashtra, India
                     </p>
                   </div>
@@ -80,32 +80,14 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Phone Numbers</h4>
                     <p className="text-muted-foreground text-sm">
-                      Main: +91 98765 43210<br />
-                      Admissions: +91 98765 43211<br />
-                      Helpline: +91 98765 43212
+                      Raju Salunke: 9823745311<br />
+                      Balaji Sawant: 9403745844
                     </p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card>
-              <CardContent className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 p-3 rounded-lg">
-                    <Mail className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Email</h4>
-                    <p className="text-muted-foreground text-sm">
-                      General: info@globalscienceacademy.com<br />
-                      Admissions: admissions@globalscienceacademy.com<br />
-                      Support: support@globalscienceacademy.com
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
 
             <Card>
               <CardContent className="p-6">

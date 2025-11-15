@@ -1,5 +1,10 @@
 import { CheckCircle2 } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 const AboutSection = () => {
   const features = [
@@ -25,16 +30,28 @@ const AboutSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left - Image */}
-          <div className="relative animate-fade-in">
-            <div className="relative rounded-2xl overflow-hidden shadow-xl">
-              <img
-                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=600&fit=crop"
-                alt="Classroom"
-                className="w-full h-[500px] object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
-            </div>
+          {/* Left - Carousel (moved from Hero) */}
+          <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] rounded-xl overflow-hidden animate-fade-in">
+            <Swiper
+              spaceBetween={30}
+              centeredSlides={true}
+              autoplay={{ delay: 5000, disableOnInteraction: false }}
+              pagination={{ clickable: true }}
+              navigation={true}
+              loop={true}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="w-full h-full"
+            >
+              {[
+                '/institute/image1.png.jpg',
+                '/institute/image2.png.jpg',
+                '/institute/image3.png.jpg',
+              ].map((src, index) => (
+                <SwiperSlide key={index} className="w-full h-full">
+                  <img src={src} alt={`Institute Image ${index + 1}`} className="w-full h-full object-cover" />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
 
           {/* Right - Content */}
