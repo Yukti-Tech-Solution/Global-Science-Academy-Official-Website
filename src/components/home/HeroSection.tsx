@@ -25,24 +25,25 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 gap-8 items-center justify-items-center text-center">
           {/* Content */}
-                   
+          <div className="text-primary-foreground animate-fade-in-up max-w-3xl">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="inline-block bg-primary-foreground/20 backdrop-blur-sm px-4 py-2 rounded-full">
+                <span className="text-sm font-medium">🎓 Excellence in Science Education</span>
+              </div>
+            </div>
+            
             {/* Institute Name with Logo */}
             <div className="flex items-center justify-center gap-4 mb-4">
               <img 
                 src="/logo.jpg" 
                 alt="Global Science Academy Logo" 
-                className="h-23 w-auto md:h-28 md:w-auto" 
+                className="h-16 w-auto md:h-20 md:w-auto" 
               />
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground">
                 Global Science Academy
               </h1>
             </div>
-          <div className="text-primary-foreground animate-fade-in-up max-w-3xl">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="inline-block bg-primary-foreground/20 backdrop-blur-sm px-4 py-2 rounded-full">
-              </div>
-            </div>
-     
+            
             <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-primary-foreground">
               Your Future Begins Here
             </h2>

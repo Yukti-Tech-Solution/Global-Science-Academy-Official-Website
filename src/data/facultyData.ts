@@ -49,7 +49,7 @@ export const facultyMembers: FacultyMember[] = [
     name: "Prof. Balaji Sawant",
     subject: "Co-Founder & Director",
     qualification: "MSC Mathematics, B.ed | 18+ Years teaching experience",
-    photo: "/faculty/balaji-sawant-png.jpg",
+    photo: "/faculty/balaji-sawant.png.jpg",
   },
 ];
 
