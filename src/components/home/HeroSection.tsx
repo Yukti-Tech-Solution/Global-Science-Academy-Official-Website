@@ -26,25 +26,25 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 gap-8 items-center justify-items-center text-center">
           {/* Content */}
           <div className="text-primary-foreground animate-fade-in-up max-w-3xl">
-            <div className="flex items-center gap-3 mb-6">
+            {/* Institute Name with Logo */}
+            <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-6 mb-4 whitespace-nowrap">
+              <img 
+                src="/logo.jpg" 
+                alt="Global Science Academy Logo" 
+                className="h-20 w-auto sm:h-28 md:h-36 lg:h-44 xl:h-52 max-w-[200px] sm:max-w-[280px] md:max-w-[360px] lg:max-w-[440px] xl:max-w-[520px] object-contain flex-shrink-0" 
+              />
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-primary-foreground whitespace-nowrap">
+                Global Science Academy
+              </h1>
+            </div>
+            
+            <div className="flex items-center justify-center gap-3 mb-6">
               <div className="inline-block bg-primary-foreground/20 backdrop-blur-sm px-4 py-2 rounded-full">
                 <span className="text-sm font-medium">🎓 Excellence in Science Education</span>
               </div>
             </div>
             
-            {/* Institute Name with Logo */}
-            <div className="flex items-center justify-center gap-4 mb-4">
-              <img 
-                src="/logo.jpg" 
-                alt="Global Science Academy Logo" 
-                className="h-16 w-auto md:h-20 md:w-auto" 
-              />
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground">
-                Global Science Academy
-              </h1>
-            </div>
-            
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-primary-foreground">
+            <h2 className="text-4xl md:text-5xl font-bold mb-5 leading-tight text-primary-foreground">
               Your Future Begins Here
             </h2>
             
