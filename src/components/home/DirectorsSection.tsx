@@ -18,7 +18,7 @@ const DirectorsSection = () => {
       name: "Prof. Balaji Sawant",
       title: "Co-Founder & Director",
       specialization: "MSC Mathematics , B.ed",
-      image: "/faculty/balaji-sawant.png.jpg",
+      image: "/faculty/balaji-sawant-png.jpg",
       
       achievements: [
         "18+ years teaching experience",
