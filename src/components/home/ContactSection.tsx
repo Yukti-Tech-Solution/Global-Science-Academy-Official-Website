@@ -80,8 +80,8 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Phone Numbers</h4>
                     <p className="text-muted-foreground text-sm">
-                      Raju Salunke: 9823745311<br />
-                      Balaji Sawant: 9403745844
+                      Raju B Salunke: 9823745311<br />
+                      Balaji T Sawant: 9403745844
                     </p>
                   </div>
                 </div>
@@ -97,10 +97,12 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Office Hours</h4>
-                    <p className="text-muted-foreground text-sm">
-                      Monday - Saturday: 8:00 AM - 8:00 PM<br />
-                      Sunday: 9:00 AM - 2:00 PM<br />
-                      <span className="text-primary font-medium">Closed on public holidays</span>
+                    <p className="text-muted-foreground text-sm space-y-1">
+                      <span>Monday - Saturday: 7:30 AM – 2:30 PM</span><br />
+                      <span>Sunday: Closed</span>
+                    </p>
+                    <p className="text-xs text-muted-foreground mt-2">
+                      Hours verified via Google Maps.
                     </p>
                   </div>
                 </div>
@@ -109,16 +111,31 @@ const ContactSection = () => {
 
             {/* Map */}
             <Card className="overflow-hidden">
-              <div className="aspect-video">
+              <div className="aspect-video bg-muted">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823277!2d72.74109995709657!3d19.082177510100088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.86495765334!2d77.3776586!3d19.2817083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd1dbeee5db0cb1%3A0xf7010cdea40f360e!2sGlobal%20Science%20Academy!5e0!3m2!1sen!2sin!4v1732470000000!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
+                  title="Global Science Academy location"
                 />
+              </div>
+              <div className="p-4 border-t bg-muted/30 flex flex-wrap gap-3 justify-between items-center">
+                <p className="text-sm text-muted-foreground">
+                  Prefer Google Maps? Open the shared location link below.
+                </p>
+                <Button asChild size="sm" variant="outline">
+                  <a
+                    href="https://maps.app.goo.gl/azSenQJWWfxWQMZW8"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View Shared Location
+                  </a>
+                </Button>
               </div>
             </Card>
           </div>

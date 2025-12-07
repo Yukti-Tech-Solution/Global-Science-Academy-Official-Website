@@ -39,14 +39,14 @@ export const facultyMembers: FacultyMember[] = [
   },
   {
     id: 5,
-    name: "Prof. Raju Salunke",
+    name: "Prof. Raju B Salunke",
     subject: "Mathematics",
     qualification: "M.Sc. Mathematics, B.Ed",
     photo: "/faculty/raju-salunke.png.jpg",
   },
   {
     id: 6,
-    name: "Prof. Balaji Sawant",
+    name: "Prof. Balaji T Sawant",
     subject: "Co-Founder & Director",
     qualification: "MSC Mathematics, B.ed | 18+ Years teaching experience",
     photo: "/faculty/balaji-sawant.png.jpg",

@@ -97,11 +97,11 @@ const Footer = () => {
               </li>
               <li className="flex gap-2 text-muted-foreground text-sm">
                 <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>Raju Salunke: 9823745311</span>
+                <span>Raju B Salunke: 9823745311</span>
               </li>
               <li className="flex gap-2 text-muted-foreground text-sm">
                 <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>Balaji Sawant: 9403745844</span>
+                <span>Balaji T Sawant: 9403745844</span>
               </li>
             </ul>
           </div>
@@ -113,7 +113,22 @@ const Footer = () => {
             © 2025 Global Science Academy. All rights reserved.
           </p>
           <p className="text-muted-foreground text-sm text-center md:text-right">
-            Founded by <span className="font-semibold text-foreground">Prof. Raju Salunke</span> & <span className="font-semibold text-foreground">Prof. Balaji Sawant</span>
+            Founded by <span className="font-semibold text-foreground">Prof. Raju B Salunke</span> & <span className="font-semibold text-foreground">Prof. Balaji T Sawant</span>
+          </p>
+        </div>
+
+        {/* Yukti Tech Solution Credit */}
+        <div className="border-t border-border mt-6 pt-6">
+          <p className="text-center text-xs text-muted-foreground">
+            Powered by{" "}
+            <a
+              href="https://yuktitechsolution.co.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-primary/80 font-medium transition-colors underline underline-offset-2"
+            >
+              Yukti Tech Solution
+            </a>
           </p>
         </div>
       </div>

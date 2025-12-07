@@ -200,11 +200,11 @@ const PricingSection = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a href="tel:+919823745311" className="flex items-center gap-2 text-primary hover:underline font-medium">
-                  Raju Salunke: +91 98237 45311
+                  Raju B Salunke: +91 98237 45311
                 </a>
                 <span className="hidden sm:block text-muted-foreground">|</span>
                 <a href="tel:+919403745844" className="flex items-center gap-2 text-primary hover:underline font-medium">
-                  Balaji Sawant: +91 94037 45844
+                  Balaji T Sawant: +91 94037 45844
                 </a>
               </div>
             </CardContent>

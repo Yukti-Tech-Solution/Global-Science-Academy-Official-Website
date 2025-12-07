@@ -60,7 +60,7 @@ const AboutSection = () => {
               <h3 className="text-2xl font-bold mb-6">Our Approach to Excellence</h3>
               
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Founded by <span className="font-semibold text-foreground">Prof. Raju Salunke</span> and <span className="font-semibold text-foreground">Prof. Balaji Sawant</span>, 
+                Founded by <span className="font-semibold text-foreground">Prof. Raju B Salunke</span> and <span className="font-semibold text-foreground">Prof. Balaji T Sawant</span>, 
                 Global Science Academy has been a beacon of quality education in science stream. We focus on building strong conceptual foundations 
                 while preparing students for competitive exams.
               </p>

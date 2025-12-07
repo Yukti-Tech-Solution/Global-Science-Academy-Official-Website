@@ -4,9 +4,9 @@ import { Award, GraduationCap, Users } from "lucide-react";
 const DirectorsSection = () => {
   const directors = [
     {
-      name: "Prof. Raju Salunke",
+      name: "Prof. Raju B Salunke",
       title: "Co-Founder & Director",
-      specialization: "MSC Biotech , B.ed",
+      specialization: "M.Sc Biotech , B.Ed",
       image: "/faculty/raju-salunke.png.jpg",
       achievements: [
         "20+ years teaching experience",
@@ -15,9 +15,9 @@ const DirectorsSection = () => {
       ]
     },
     {
-      name: "Prof. Balaji Sawant",
+      name: "Prof. Balaji T Sawant",
       title: "Co-Founder & Director",
-      specialization: "MSC Mathematics , B.ed",
+      specialization: "M.Sc  , B.Ed",
       image: "/faculty/balaji-sawant-png.jpg",
       
       achievements: [
