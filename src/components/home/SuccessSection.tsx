@@ -14,10 +14,10 @@ const SuccessSection = () => {
         <div className="text-center mb-16 animate-fade-in">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">Achievements</span>
           <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">
-            Our Achievements & Results
+            Proven Track Record in JEE and NEET Results
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Celebrating our students' outstanding performance and academy milestones
+            Celebrating our students' outstanding performance in JEE, NEET, and CET exams. Join hundreds of successful students who achieved their dreams at Global Science Academy Nanded.
           </p>
         </div>
 

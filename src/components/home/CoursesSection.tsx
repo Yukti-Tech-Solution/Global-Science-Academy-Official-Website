@@ -9,7 +9,7 @@ const CoursesSection = () => {
       id: "pcm",
       title: "PCM",
       subtitle: "Physics, Chemistry, Mathematics",
-      description: "Perfect for engineering aspirants. Comprehensive coverage of all topics with focus on JEE and competitive exams.",
+      description: "Perfect for engineering aspirants. Comprehensive coverage of all topics with focus on JEE Main, JEE Advanced, and CET competitive exams.",
       icon: Calculator,
       color: "bg-indigo-500/10 text-indigo-800",
       subjects: ["Physics", "Chemistry", "Mathematics"]
@@ -18,7 +18,7 @@ const CoursesSection = () => {
       id: "pcb",
       title: "PCB",
       subtitle: "Physics, Chemistry, Biology",
-      description: "Ideal for medical aspirants. In-depth preparation for NEET and medical entrance exams with practical focus.",
+      description: "Ideal for medical aspirants. In-depth preparation for NEET and medical entrance exams with practical focus and expert Biology coaching.",
       icon: Dna,
       color: "bg-green-500/10 text-green-600",
       subjects: ["Physics", "Chemistry", "Biology"]
@@ -40,10 +40,10 @@ const CoursesSection = () => {
         <div className="text-center mb-16 animate-fade-in">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">Our Courses</span>
           <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">
-            Choose Your Path to Success
+            JEE, NEET & CET Coaching Programs in Nanded
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Specialized courses for 11th & 12th grade students with expert faculty and proven teaching methods
+            Specialized courses for 11th & 12th grade students in Ardhapur, Nanded with expert faculty and proven teaching methods for JEE, NEET, and CET preparation
           </p>
         </div>
 

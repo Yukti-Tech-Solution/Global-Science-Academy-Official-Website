@@ -128,3 +128,69 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .contact-card {
+    @apply shadow-lg rounded-2xl border;
+    background: linear-gradient(145deg, #ffffff 0%, #f8fbff 100%);
+    transition: var(--transition-smooth);
+  }
+
+  .dark .contact-card {
+    background: linear-gradient(145deg, #0b1220 0%, #0f172a 100%);
+  }
+
+  .contact-card input,
+  .contact-card textarea {
+    transition: var(--transition-smooth);
+  }
+
+  .contact-card input:focus,
+  .contact-card textarea:focus {
+    outline: 2px solid hsl(var(--primary));
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px hsla(218, 100%, 45%, 0.15);
+  }
+
+  .submit-button {
+    @apply font-semibold;
+    background: var(--gradient-primary);
+    transition: var(--transition-smooth);
+  }
+
+  .submit-button:hover {
+    filter: brightness(1.05);
+    transform: translateY(-1px);
+  }
+
+  .submit-button:disabled {
+    filter: grayscale(0.3);
+    opacity: 0.85;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  .form-status {
+    @apply mt-3 text-sm rounded-lg px-4 py-3 border;
+    min-height: 44px;
+    transition: var(--transition-smooth);
+  }
+
+  .form-status:empty {
+    padding: 0;
+    border-color: transparent;
+    min-height: 0;
+  }
+
+  .form-status-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #b7dfc2;
+  }
+
+  .form-status-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f1bfc4;
+  }
+}

@@ -22,10 +22,10 @@ const AboutSection = () => {
         <div className="text-center mb-16 animate-fade-in">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">About Us</span>
           <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">
-            Why Choose Global Science Academy?
+            Why Choose Global Science Academy for Competitive Exam Preparation?
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            We are committed to nurturing young minds and helping them achieve their dreams through quality education and guidance.
+            We are committed to nurturing young minds and helping them achieve their dreams through quality education and guidance. Expert Physics, Chemistry, Maths & Biology faculty with proven track record in JEE and NEET results.
           </p>
         </div>
 
@@ -43,12 +43,17 @@ const AboutSection = () => {
               className="w-full h-full"
             >
               {[
-                '/institute/image1.png.jpg',
-                '/institute/image2.png.jpg',
-                '/institute/image3.png.jpg',
-              ].map((src, index) => (
+                { src: '/institute/image1.png.jpg', alt: 'Modern classroom at Global Science Academy Nanded for JEE NEET coaching' },
+                { src: '/institute/image2.png.jpg', alt: 'Physics and Chemistry laboratory for practical learning at Global Science Academy Ardhapur' },
+                { src: '/institute/image3.png.jpg', alt: 'Experienced faculty members teaching at Global Science Academy Nanded' },
+              ].map((image, index) => (
                 <SwiperSlide key={index} className="w-full h-full">
-                  <img src={src} alt={`Institute Image ${index + 1}`} className="w-full h-full object-cover" />
+                  <img 
+                    src={image.src} 
+                    alt={image.alt} 
+                    className="w-full h-full object-cover" 
+                    loading="lazy"
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -57,7 +62,7 @@ const AboutSection = () => {
           {/* Right - Content */}
           <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <Card className="p-8 shadow-lg">
-              <h3 className="text-2xl font-bold mb-6">Our Approach to Excellence</h3>
+              <h3 className="text-2xl font-bold mb-6">Expert Physics, Chemistry, Maths & Biology Faculty</h3>
               
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Founded by <span className="font-semibold text-foreground">Prof. Raju B Salunke</span> and <span className="font-semibold text-foreground">Prof. Balaji T Sawant</span>, 

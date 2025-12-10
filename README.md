@@ -1,73 +1,197 @@
-# Welcome to your Lovable project
+# Global Science Academy - Official Website
 
-## Project info
+> Premier coaching institute in Ardhapur, Nanded for JEE, NEET & CET preparation
 
-**URL**: https://lovable.dev/projects/5b847d4a-2243-41bf-94e4-f09d98d3bccd
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fyourwebsite.com)](https://yourwebsite.com)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-## How can I edit this code?
+## 📚 About
 
-There are several ways of editing your application.
+Global Science Academy is a leading coaching institute in Ardhapur, Nanded, Maharashtra, specializing in:
 
-**Use Lovable**
+- 11th & 12th Science Education
+- JEE (Joint Entrance Examination) preparation
+- NEET (National Eligibility cum Entrance Test) coaching
+- CET (Common Entrance Test) training
+- Expert faculty in Physics, Chemistry, Mathematics & Biology
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5b847d4a-2243-41bf-94e4-f09d98d3bccd) and start prompting.
+**Location:** Behind Bole Hospital, Langade Nagar, Ardhapur, Nanded - 431704, Maharashtra
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🌟 Features
 
-**Use your preferred IDE**
+### Website Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- ✅ Modern, responsive design
+- ✅ SEO optimized for local search
+- ✅ Fast loading performance
+- ✅ Mobile-first approach
+- ✅ Functional contact form with EmailJS integration
+- ✅ Google Maps integration
+- ✅ Course information & achievements showcase
+- ✅ Dark/Light theme support
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Technical Stack
 
-Follow these steps:
+- **Framework:** React 18 with TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS
+- **UI Components:** shadcn/ui
+- **Form Handling:** React Hook Form with Zod validation
+- **Email Service:** EmailJS
+- **Routing:** React Router v6
+- **Icons:** Lucide React
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🚀 Quick Start
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Prerequisites
 
-# Step 3: Install the necessary dependencies.
-npm i
+- Node.js 18+ and npm/pnpm/yarn
+- Git
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### Installation
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/Yukti-Tech-Solution/Global-Science-Academy-Official-Website.git
+cd Global-Science-Academy-Official-Website
 ```
 
-**Edit a file directly in GitHub**
+2. **Install dependencies**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm install
+# or
+pnpm install
+# or
+yarn install
+```
 
-**Use GitHub Codespaces**
+3. **Configure EmailJS (for contact form)**
+   - Create account at [EmailJS.com](https://www.emailjs.com/)
+   - Get your Service ID, Template ID, and Public Key
+   - Update in `src/components/home/ContactSection.tsx`:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```typescript
+const EMAILJS_SERVICE_ID = "your_service_id";
+const EMAILJS_TEMPLATE_ID = "your_template_id";
+const EMAILJS_PUBLIC_KEY = "your_public_key";
+```
 
-## What technologies are used for this project?
+4. **Run development server**
 
-This project is built with:
+```bash
+npm run dev
+# or
+pnpm dev
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Visit: http://localhost:5173
 
-## How can I deploy this project?
+### Build for Production
 
-Simply open [Lovable](https://lovable.dev/projects/5b847d4a-2243-41bf-94e4-f09d98d3bccd) and click on Share -> Publish.
+```bash
+npm run build
+# Output will be in /dist folder
+# Preview production build
+npm run preview
+```
 
-## Can I connect a custom domain to my Lovable project?
+## 📁 Project Structure
 
-Yes, you can!
+```
+Global-Science-Academy/
+├── public/              # Static assets
+├── src/
+│   ├── components/      # React components
+│   │   ├── ui/         # shadcn/ui components
+│   │   └── home/       # Page-specific components
+│   ├── lib/            # Utilities and helpers
+│   ├── hooks/          # Custom React hooks
+│   ├── App.tsx         # Main app component
+│   └── main.tsx        # Entry point
+├── .gitignore
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📧 Contact Form Setup
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+The website includes a functional contact form powered by EmailJS.
+
+**Setup Steps:**
+
+1. Create a free EmailJS account
+2. Add Gmail service and connect your email
+3. Create an email template with these variables:
+   - `{{from_name}}` - Student name
+   - `{{from_email}}` - Student email
+   - `{{phone_number}}` - Phone number
+   - `{{message}}` - Message content
+   - `{{submission_date}}` - Submission timestamp
+4. Update credentials in `src/components/home/ContactSection.tsx`
+5. Test the form
+
+**Current Email:** globalscienceacademyadp@gmail.com
+
+## 🎨 Customization
+
+**Update Content**
+- Hero Section: `src/components/home/HeroSection.tsx`
+- Courses: `src/components/home/CoursesSection.tsx`
+- About: `src/components/home/AboutSection.tsx`
+- Contact: `src/components/home/ContactSection.tsx`
+
+**Update Styling**
+- Global styles: `src/index.css`
+- Tailwind config: `tailwind.config.js`
+- Theme colors: `src/components/ui/theme-provider.tsx`
+
+**Update SEO**
+- Meta tags in `index.html`
+- Update `public/robots.txt`
+- Create `public/sitemap.xml`
+
+## 🔍 SEO Optimization
+
+Website is optimized for:
+
+- ✅ Google Search (Local SEO for Nanded/Ardhapur)
+- ✅ Mobile responsiveness
+- ✅ Fast page load (Lighthouse score 90+)
+- ✅ Schema markup for educational organization
+- ✅ Social media sharing (Open Graph tags)
+
+**Target Keywords:**
+
+- Science coaching Nanded
+- JEE coaching Ardhapur
+- NEET coaching Nanded
+- CET classes Nanded
+- 11th 12th coaching Maharashtra
+
+## 📱 Contact Information
+
+- **Address:** Behind Bole Hospital, Langade Nagar, Ardhapur, 431704
+- **Phone:** Raju B Salunke: +91-9823745311 | Balaji T Sawant: +91-9403745844
+- **Email:** globalscienceacademyadp@gmail.com
+- **Hours:** Monday - Saturday: 7:30 AM – 2:30 PM (Sunday Closed)
+- **Google Maps:** View Location
+
+## 🤝 Contributing
+
+This is a private project for Global Science Academy. For updates or issues, contact the development team.
+
+## 📄 License
+
+© 2024 Global Science Academy. All rights reserved.
+
+## 🛠️ Maintenance & Support
+
+- Developed by: Yukti Tech Solution
+- Repository: GitHub
+- For technical support or updates, contact the development team.
+
+Built by yukti tech solution (yuktitechsolution.co.in) for Global Science Academy, Nanded

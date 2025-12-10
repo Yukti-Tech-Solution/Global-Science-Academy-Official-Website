@@ -51,8 +51,9 @@ const DirectorsSection = () => {
               <div className="aspect-square overflow-hidden">
                 <img
                   src={director.image}
-                  alt={director.name}
+                  alt={`${director.name} - ${director.title} at Global Science Academy Nanded`}
                   className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
                 />
               </div>
               <CardContent className="p-6">

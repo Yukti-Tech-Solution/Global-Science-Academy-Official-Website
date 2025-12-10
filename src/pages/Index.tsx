@@ -9,11 +9,14 @@ import PricingSection from "@/components/home/PricingSection";
 import DirectorsSection from "@/components/home/DirectorsSection";
 import SuccessSection from "@/components/home/SuccessSection";
 import ContactSection from "@/components/home/ContactSection";
+import FAQSection from "@/components/home/FAQSection";
 
 const Index = () => {
   const location = useLocation();
 
   useEffect(() => {
+    document.title = "Global Science Academy - JEE, NEET & CET Coaching in Ardhapur, Nanded | Best Science Classes";
+    
     if (location.hash) {
       const id = location.hash.replace("#", "");
       const el = document.getElementById(id);
@@ -35,6 +38,7 @@ const Index = () => {
         <PricingSection />
         <DirectorsSection />
         <SuccessSection />
+        <FAQSection />
         <ContactSection />
       </main>
       <Footer />

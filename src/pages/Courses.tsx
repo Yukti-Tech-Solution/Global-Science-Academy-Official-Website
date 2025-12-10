@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -6,6 +7,10 @@ import { Link } from "react-router-dom";
 import { CheckCircle2, Clock, Users, BookOpen, Calendar } from "lucide-react";
 
 const Courses = () => {
+  useEffect(() => {
+    document.title = "Courses - JEE, NEET, CET Coaching Programs | Global Science Academy Nanded";
+  }, []);
+
   const courses = [
     {
       id: "pcm",
@@ -111,9 +116,9 @@ const Courses = () => {
         {/* Header */}
         <div className="bg-gradient-to-br from-primary via-primary-light to-primary-dark py-20 text-primary-foreground">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">Our Courses</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">JEE, NEET & CET Coaching Programs in Nanded</h1>
             <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              Choose the right path for your future. Expert faculty, comprehensive curriculum, and proven results.
+              Choose the right path for your future. Expert Physics, Chemistry, Mathematics & Biology faculty in Ardhapur, Nanded. Comprehensive curriculum and proven results for JEE, NEET, and CET preparation.
             </p>
           </div>
         </div>

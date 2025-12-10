@@ -4,36 +4,38 @@ import { ArrowRight, Download, User } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-[url('/institute/image14.png.jpeg')] bg-cover bg-center">
+    <section className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden bg-[url('/institute/image14.png.jpeg')] bg-cover bg-center">
       {/* Background Image */}
       <picture className="absolute inset-0" aria-hidden>
         <source srcSet="/institute/image14.png.avif" type="image/avif" />
         <img
           src="/institute/image14.png.jpeg"
-          alt="Global Science Academy background"
+          alt="Global Science Academy building and classrooms in Ardhapur Nanded for JEE NEET coaching"
           className="w-full h-full object-cover object-center scale-105 md:scale-100"
+          loading="eager"
         />
       </picture>
 
       {/* Soft dark overlay for readability */}
-      <div className="absolute inset-0 bg-black/20" />
+      <div className="absolute inset-0 bg-black/30" />
       
       {/* Animated Shapes */}
       <div className="absolute top-20 right-10 w-72 h-72 bg-accent/20 rounded-full blur-3xl animate-float" />
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-primary-foreground/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }} />
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 gap-8 items-center justify-items-center text-center">
+        <div className="grid grid-cols-1 gap-10 items-center justify-items-center text-center">
           {/* Content */}
-          <div className="text-primary-foreground animate-fade-in-up max-w-3xl">
+          <div className="text-primary-foreground animate-fade-in-up max-w-5xl mx-auto">
             {/* Institute Name with Logo */}
-            <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-6 mb-4 whitespace-nowrap">
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-3 sm:gap-4 md:gap-6 mb-4 text-balance">
               <img 
                 src="/logo.jpg" 
-                alt="Global Science Academy Logo" 
+                alt="Global Science Academy Logo - JEE NEET CET Coaching Institute Nanded Ardhapur" 
                 className="h-20 w-auto sm:h-28 md:h-36 lg:h-44 xl:h-52 max-w-[200px] sm:max-w-[280px] md:max-w-[360px] lg:max-w-[440px] xl:max-w-[520px] object-contain flex-shrink-0" 
+                loading="eager"
               />
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-primary-foreground whitespace-nowrap">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground text-center lg:text-left leading-tight lg:leading-[1.05]">
                 Global Science Academy
               </h1>
             </div>
@@ -44,15 +46,16 @@ const HeroSection = () => {
               </div>
             </div>
             
-            <h2 className="text-4xl md:text-5xl font-bold mb-5 leading-tight text-primary-foreground">
-              Your Future Begins Here
-            </h2>
+            <div className="space-y-3">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-primary-foreground">
+                Your Future Begins Here
+              </h2>
+              <p className="text-lg md:text-xl text-primary-foreground/90 leading-relaxed max-w-4xl mx-auto">
+                Premier coaching for 11th & 12th Grade Science students. Expert faculty, comprehensive study materials, and proven results.
+              </p>
+            </div>
             
-            <p className="text-lg md:text-xl mb-8 text-primary-foreground/90 leading-relaxed">
-              Premier coaching for 11th & 12th Grade Science students. Expert faculty, comprehensive study materials, and proven results.
-            </p>
-            
-            <div className="flex flex-wrap gap-4 mb-8 justify-center">
+            <div className="flex flex-wrap gap-4 mt-8 mb-8 justify-center">
               <div className="bg-primary-foreground/10 backdrop-blur-sm px-6 py-3 rounded-lg">
                 <div className="text-2xl font-bold">500+</div>
                 <div className="text-sm opacity-90">Students</div>
