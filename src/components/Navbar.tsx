@@ -24,7 +24,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             <img 
-              src="/logo.jpg" 
+              src="/logo.png" 
               alt="Global Science Academy Logo" 
               className="h-10 w-auto group-hover:scale-105 transition-transform" 
             />

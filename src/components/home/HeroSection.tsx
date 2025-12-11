@@ -30,7 +30,7 @@ const HeroSection = () => {
             {/* Institute Name with Logo */}
             <div className="flex flex-col lg:flex-row items-center justify-center gap-3 sm:gap-4 md:gap-6 mb-4 text-balance">
               <img 
-                src="/logo.jpg" 
+                src="/logo.png" 
                 alt="Global Science Academy Logo - JEE NEET CET Coaching Institute Nanded Ardhapur" 
                 className="h-20 w-auto sm:h-28 md:h-36 lg:h-44 xl:h-52 max-w-[200px] sm:max-w-[280px] md:max-w-[360px] lg:max-w-[440px] xl:max-w-[520px] object-contain flex-shrink-0" 
                 loading="eager"
