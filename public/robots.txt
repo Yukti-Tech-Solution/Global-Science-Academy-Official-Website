@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Disallow admin and private routes
+Disallow: /auth
+Disallow: /dashboard
+Disallow: /notes

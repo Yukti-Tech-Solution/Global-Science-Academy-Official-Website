@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 40% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 15%;
+
+    --primary: 218 100% 27%;
+    --primary-foreground: 0 0% 100%;
+    
+    --primary-light: 218 100% 45%;
+    --primary-dark: 218 100% 20%;
+
+    --secondary: 210 100% 97%;
+    --secondary-foreground: 218 100% 27%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 220 20% 45%;
+
+    --accent: 45 100% 51%;
+    --accent-foreground: 220 40% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 218 100% 27%;
+
+    --radius: 0.75rem;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(218 100% 27%), hsl(218 100% 45%));
+    --gradient-secondary: linear-gradient(135deg, hsl(210 100% 97%), hsl(218 100% 95%));
+    --gradient-hero: linear-gradient(135deg, hsl(218 100% 20%) 0%, hsl(218 100% 27%) 100%);
+    
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 218 100% 27%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 100% 97%;
+    --sidebar-accent-foreground: 218 100% 27%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 218 100% 27%;
+  }
+
+  .dark {
+    --background: 220 40% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 220 40% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 220 40% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 218 100% 45%;
+    --primary-foreground: 0 0% 100%;
+    
+    --primary-light: 218 100% 55%;
+    --primary-dark: 218 100% 35%;
+
+    --secondary: 220 40% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 220 40% 15%;
+    --muted-foreground: 220 20% 65%;
+
+    --accent: 45 100% 51%;
+    --accent-foreground: 220 40% 8%;
+    
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 40% 20%;
+    --input: 220 40% 20%;
+    --ring: 218 100% 45%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(218 100% 35%), hsl(218 100% 55%));
+    --gradient-secondary: linear-gradient(135deg, hsl(220 40% 15%), hsl(220 40% 20%));
+    --gradient-hero: linear-gradient(135deg, hsl(218 100% 25%) 0%, hsl(218 100% 45%) 100%);
+    
+    --sidebar-background: 220 40% 10%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 218 100% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 40% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 220 40% 20%;
+    --sidebar-ring: 218 100% 45%;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .contact-card {
+    @apply shadow-lg rounded-2xl border;
+    background: linear-gradient(145deg, #ffffff 0%, #f8fbff 100%);
+    transition: var(--transition-smooth);
+  }
+
+  .dark .contact-card {
+    background: linear-gradient(145deg, #0b1220 0%, #0f172a 100%);
+  }
+
+  .contact-card input,
+  .contact-card textarea {
+    transition: var(--transition-smooth);
+  }
+
+  .contact-card input:focus,
+  .contact-card textarea:focus {
+    outline: 2px solid hsl(var(--primary));
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px hsla(218, 100%, 45%, 0.15);
+  }
+
+  .submit-button {
+    @apply font-semibold;
+    background: var(--gradient-primary);
+    transition: var(--transition-smooth);
+  }
+
+  .submit-button:hover {
+    filter: brightness(1.05);
+    transform: translateY(-1px);
+  }
+
+  .submit-button:disabled {
+    filter: grayscale(0.3);
+    opacity: 0.85;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  .form-status {
+    @apply mt-3 text-sm rounded-lg px-4 py-3 border;
+    min-height: 44px;
+    transition: var(--transition-smooth);
+  }
+
+  .form-status:empty {
+    padding: 0;
+    border-color: transparent;
+    min-height: 0;
+  }
+
+  .form-status-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #b7dfc2;
+  }
+
+  .form-status-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f1bfc4;
+  }
+}
