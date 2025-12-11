@@ -2,8 +2,12 @@
 
 > Premier coaching institute in Ardhapur, Nanded for JEE, NEET & CET preparation
 
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Fyourwebsite.com)](https://yourwebsite.com)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fglobalscience-academy.co.in)](https://globalscience-academy.co.in)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+## 🔗 Live Website
+
+Visit: https://globalscience-academy.co.in
 
 ## 📚 About
 
